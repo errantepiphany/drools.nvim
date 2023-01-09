@@ -1,5 +1,7 @@
 local M = {}
 
+-- e.g., local enable = util.lookup(config, { 'treesitter', 'enable' }, false)
+
 function M.lookup(t, path, def)
   path = path and path or {}
   if type(path) ~= 'table' then
